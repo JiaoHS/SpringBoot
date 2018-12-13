@@ -21,13 +21,13 @@ logging:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.95.218.154:3306/ipinfo
+    url: jdbc:mysql://47.95.218.154:3306/nais
     username: root
     password: passw0rd
 
 mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
+#  configuration:
+#    map-underscore-to-camel-case: true
   type-aliases-package: com.xjtu.pojo
   # mybatis 开启自动驼峰匹配
   # mapper-locations: mapper/*.xml #单表不需要

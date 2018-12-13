@@ -1,4 +1,8 @@
 package com.xjtu.mapper;
 
-public interface UserMapper {
+import com.xjtu.pojo.User;
+import tk.mybatis.mapper.common.Mapper;
+
+public interface UserMapper extends Mapper<User> {
+
 }

@@ -13,6 +13,8 @@ server:
   port: 8088
   servlet:
     path: "*.do"
+#org.springframework: info
+#debug<info<warn<Error<Fatal;
 logging:
   level:
     com.xjtu: debug
@@ -22,5 +24,10 @@ spring:
     url: jdbc:mysql://47.95.218.154:3306/ipinfo
     username: root
     password: passw0rd
-    #org.springframework: info
-    #debug<info<warn<Error<Fatal;
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.xjtu.pojo
+  # mybatis 开启自动驼峰匹配
+  # mapper-locations: mapper/*.xml #单表不需要

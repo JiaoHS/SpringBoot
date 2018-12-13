@@ -14,6 +14,7 @@ public class HelloController {
 
     @GetMapping("hello.do")
     public String Hello(){
+        System.out.println("Hello is Runing");
         return "Hello Spring Boot!";
     }
 }

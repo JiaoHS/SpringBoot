@@ -16,4 +16,4 @@ server:
 logging:
   level:
     com.xjtu: info
-    org.springframework: info
+    #org.springframework: info

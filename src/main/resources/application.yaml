@@ -15,5 +15,12 @@ server:
     path: "*.do"
 logging:
   level:
-    com.xjtu: info
+    com.xjtu: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.95.218.154:3306/ipinfo
+    username: root
+    password: passw0rd
     #org.springframework: info
+    #debug<info<warn<Error<Fatal;

@@ -1,11 +1,19 @@
-jdbc:
-    driverClassName: com.mysql.jdbc.Driver
-    url:jdbc: mysql://47.95.218.154:3306/ipinfo
-    username: root
-    password: passw0rd
-    user:
-      name: jack
-      age: 23
-      language:
-        - java
-        - php
+#jdbc:
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://47.95.218.154:3306/ipinfo
+#    username: root
+#    password: passw0rd
+#    user:
+#      name: jack
+#      age: 23
+#      language:
+#        - java
+#        - php
+server:
+  port: 8088
+  servlet:
+    path: "*.do"
+logging:
+  level:
+    com.xjtu: info
+    org.springframework: info

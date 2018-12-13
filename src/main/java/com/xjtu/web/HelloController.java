@@ -9,10 +9,10 @@ import javax.sql.DataSource;
 @RestController
 public class HelloController {
 
-    @Autowired
-    private DataSource dataSource;
+//    @Autowired
+//    private DataSource dataSource;
 
-    @GetMapping("hello")
+    @GetMapping("hello.do")
     public String Hello(){
         return "Hello Spring Boot!";
     }

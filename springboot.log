@@ -1,0 +1,8 @@
+2018-12-14 22:09:04.319  INFO 57580 --- [main] com.xjtu.mapper.LoggerTest               : Starting LoggerTest on Jiao with PID 57580 (started by Jiao in D:\javalearnl\springboot)
+2018-12-14 22:09:04.320 DEBUG 57580 --- [main] com.xjtu.mapper.LoggerTest               : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2018-12-14 22:09:04.322  INFO 57580 --- [main] com.xjtu.mapper.LoggerTest               : No active profile set, falling back to default profiles: default
+2018-12-14 22:09:04.932  WARN 57580 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xjtu]' package. Please check your configuration.
+2018-12-14 22:09:06.051  INFO 57580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-14 22:09:06.429  INFO 57580 --- [main] com.xjtu.mapper.LoggerTest               : Started LoggerTest in 2.614 seconds (JVM running for 3.494)
+2018-12-14 22:09:06.609  INFO 57580 --- [main] org.junit.Test                           : 哈哈哈
+2018-12-14 22:09:06.622  INFO 57580 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

@@ -18,4 +18,6 @@ public class User {
     private String from_school_cn;
     @Transient   //是否显示 加上就不显示
     private String emc_user;
+
+
 }

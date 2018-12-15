@@ -15,9 +15,10 @@ server:
     path: "*.do"
 #org.springframework: info
 #debug<info<warn<Error<Fatal;
+
 logging:
   level:
-    com.xjtu: debug
+    com.xjtu: trace
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver

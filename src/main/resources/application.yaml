@@ -16,6 +16,7 @@ server:
 #org.springframework: info
 #debug<info<warn<Error<Fatal;
 
+
 logging:
   level:
     com.xjtu: trace
@@ -25,6 +26,8 @@ spring:
     url: jdbc:mysql://47.95.218.154:3306/nais
     username: root
     password: passw0rd
+  mvc:
+    date-format: yyyy-MM-dd
 
 mybatis:
 #  configuration:

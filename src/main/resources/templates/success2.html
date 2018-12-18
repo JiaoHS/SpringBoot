@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li th:text="${item}" th:each="item:${list}">Item description here</li>
+</ul>
+<hr/>
+<br/>
+<h4 th:text="${item}" th:each="item:${list}"></h4>
+<br/>
+<hr/>
+<h3>
+    <span th:text="${hello}"></span>
+    <span th:utext="${hello}"></span>
+</h3>
+</body>
+
+</html>

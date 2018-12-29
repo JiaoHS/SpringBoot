@@ -12,6 +12,15 @@ public class Employee {
     private Integer gender;
     private Department department;
     private Date birth;
+    private Integer dId;
+
+    public Integer getdId() {
+        return dId;
+    }
+
+    public void setdId(Integer dId) {
+        this.dId = dId;
+    }
 
     public Integer getId() {
         return id;

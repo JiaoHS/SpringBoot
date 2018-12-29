@@ -9,29 +9,55 @@
 #      language:
 #        - java
 #        - php
-server:
-  port: 8088
-  servlet:
-    path: "*.do"
+#server:
+#  port: 8087
+#  servlet:
+#    path: "*.do"
 #org.springframework: info
 #debug<info<warn<Error<Fatal;
 
 
 logging:
   level:
-    com.xjtu: trace
+    com.xjtu: info
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.95.218.154:3306/nais
+    url: jdbc:mysql://47.95.218.154:3306/ssm
     username: root
     password: passw0rd
+    type: com.alibaba.druid.pool.DruidDataSource
+    #数据源其他配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+    schema:
+#      - classpath:sql/department.sql
+#      - classpath:sql/employee.sql
+    initialization-mode: always
   mvc:
     date-format: yyyy-MM-dd
+  jpa:
+    hibernate:
+      ddl-auto: update  # 第一次建表create  后面用update，要不然每次重启都会新建表
+    show-sql: true
 
 mybatis:
-#  configuration:
-#    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mybaits/mapper/*.xml
+  config-location: classpath:mybaits/mybatis-config.xml #单表不需要
   type-aliases-package: com.xjtu.pojo
-  # mybatis 开启自动驼峰匹配
-  # mapper-locations: mapper/*.xml #单表不需要
+
+

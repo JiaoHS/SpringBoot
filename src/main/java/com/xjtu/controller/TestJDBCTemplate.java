@@ -14,15 +14,15 @@ import java.util.Map;
  * @date 2018/12/27 20:34
  * @description
  */
-@Controller
-public class TestJDBCTemplate {
-    @Autowired
-    JdbcTemplate jdbcTemplate;
-    @ResponseBody
-    @RequestMapping("/query")
-    public Map<String,Object> map(){
-        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from user");
-
-        return maps.get(0);
-    }
-}
+//@Controller
+//public class TestJDBCTemplate {
+//    @Autowired
+//    JdbcTemplate jdbcTemplate;
+//    @ResponseBody
+//    @RequestMapping("/query")
+//    public Map<String,Object> map(){
+//        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from user");
+//
+//        return maps.get(0);
+//    }
+//}
